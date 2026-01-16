@@ -1,0 +1,3 @@
+.venv/
+tcp-chat/.venv
+tcp-chat/__pycache__
