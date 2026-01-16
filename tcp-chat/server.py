@@ -9,7 +9,6 @@ clients_lock = threading.Lock()
 clients = {}    # name -> socket
 partners = {}   # name -> partner_name
 
-
 def set_partner(a: str, b: str) -> None:
     partners[a] = b
     partners[b] = a
