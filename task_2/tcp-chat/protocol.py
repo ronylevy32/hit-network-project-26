@@ -7,9 +7,7 @@ def send_line(sock: socket.socket, line: str) -> None:
     sock.sendall(data)
 
 def recv_line(sock: socket.socket) -> str:
-    """
-    קורא עד newline. פשוט ללמידה; מספיק לפרויקט.
-    """
+   
     buf = bytearray()
     while True:
         chunk = sock.recv(1)
