@@ -1,3 +1,5 @@
 .venv/
 tcp-chat/.venv
 tcp-chat/__pycache__
+
+.ipynb_checkpoints
