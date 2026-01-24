@@ -3,7 +3,7 @@ import threading
 from protocol import send_line, recv_line
 
 HOST = "0.0.0.0"
-PORT = 5000
+PORT = 6543
 
 clients_lock = threading.Lock()
 clients = {}    # name -> socket
@@ -158,6 +158,8 @@ def handle_client(conn: socket.socket, addr):
             pass
 
 
+
+
 def main():
     server_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server_sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
@@ -173,3 +175,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
